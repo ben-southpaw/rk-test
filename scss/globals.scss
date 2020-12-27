@@ -1,0 +1,63 @@
+@import "./theme.scss";
+/* Hide scrollbar for Chrome, Safari and Opera */
+:global(body::-webkit-scrollbar) {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+:global(*) {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+:root {
+  background: $primary-bg;
+  --base-fontsize: 10 !important;
+  --base-design-width: 375;
+  @include respond-to("desktop") {
+    --base-fontsize: 10 !important;
+    --base-design-width: 1440; //Desktop width
+  }
+}
+
+:global(html) {
+  /*Base font size based of viewport width (1920px) for using rems*/
+  font-size: calc(var(--base-fontsize) / var(--base-design-width) * 100vw);
+  //font-size: 10px;
+  height: 100%;
+  margin: 0;
+}
+
+:global(body) {
+  background-color: $primary-bg;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+
+
+////Font face
+@font-face {
+  font-family: "Futura Bold";
+  src: url("../static/fonts/FuturaPT-Bold.otf") format("opentype"),
+  url("../static/fonts/FuturaPT-Bold.woff2") format("woff2"),
+    url("../static/fonts/FuturaPT-Bold.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futura Medium";
+  src:
+  url("../static/fonts/FuturaLTPro-Medium.woff2") format("woff2"),
+    url("../static/fonts/FuturaLTPro-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
