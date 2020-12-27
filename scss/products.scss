@@ -1,9 +1,12 @@
-.product-1 {
+.product-container * {
+  z-index: 2;
+}
+  .product-1 {
   position: absolute;
   width: 31rem;
   height: 41.4rem;
   left: 85.3rem;
-  top: 50rem;
+  top: 55rem;
   background-image: url(/images/product-1.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -13,7 +16,7 @@
   position: absolute;
   width: 11rem;
   left: 95.3rem;
-  top: 85rem;
+  top: 95rem;
 }
 .product-1-desc {
   font-family: $medium;
@@ -27,14 +30,14 @@
   height: 6.2rem;
   line-height: 6.2rem;
   left: 103.5rem;
-  top: 63rem;
+  top: 68rem;
 }
 .product-2 {
   position: absolute;
   width: 31rem;
   height: 41.4rem;
   left: 25.3rem;
-  top: 75rem;
+  top: 80rem;
   background-image: url(/images/product-2.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -44,7 +47,7 @@
   position: absolute;
   width: 11rem;
   left: 35.5rem;
-  top: 114rem;
+  top: 120rem;
 }
 .product-2-desc {
   font-family: $medium;
@@ -58,14 +61,14 @@
   height: 6.2rem;
   line-height: 6.2rem;
   left: 6rem;
-  top: 87.9rem;
+  top: 92.9rem;
 }
 .product-3 {
   position: absolute;
   width: 31rem;
   height: 41.4rem;
   left: 85.3rem;
-  top: 100rem;
+  top: 105rem;
   background-image: url(/images/product-3.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -75,7 +78,7 @@
   position: absolute;
   width: 11rem;
   left: 95.3rem;
-  top: 138rem;
+  top: 144rem;
 }
 .product-3-desc {
   font-family: $medium;
@@ -89,14 +92,14 @@
   height: 6.2rem;
   line-height: 6.2rem;
   left: 103.5rem;
-  top: 112.9rem;
+  top: 117.9rem;
 }
 .product-4 {
   position: absolute;
   width: 31rem;
   height: 41.4rem;
   left: 25.3rem;
-  top: 125rem;
+  top: 130rem;
   background-image: url(/images/product-4.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -106,7 +109,7 @@
   position: absolute;
   width: 11rem;
   left: 35.5rem;
-  top: 155rem;
+  top: 169rem;
 }
 .product-4-desc {
   font-family: $medium;
@@ -120,5 +123,6 @@
   height: 6.2rem;
   line-height: 6.2rem;
   left: 6rem;
-  top: 137.9rem;
+  top: 142.9rem;
 }
+

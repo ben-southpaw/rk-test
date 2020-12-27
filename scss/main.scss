@@ -1,6 +1,7 @@
 @import "../scss/theme";
 @import "../scss/globals";
 @import "../scss/products";
+@import "../scss/circles";
 
 
 
@@ -10,6 +11,7 @@ body {
   width: 37.5rem;
   @include respond-to('desktop') {
     width: 144rem;
+    height: 225rem;
   }
 }
 
@@ -23,6 +25,7 @@ body {
   height: 20.2rem;
   left: 44.2rem;
   top: 18.7rem;
+  letter-spacing: 0.1rem;
 }
 
 .her-image {
@@ -51,7 +54,16 @@ body {
 .red-lines {
   position: absolute;
   left: 42rem;
-  top: 35.7rem;
+  top: 39rem;
+}
+
+.divider {
+  position: absolute;
+  width: 79.7rem;
+  height: 32.6rem;
+  left: 32.2rem;
+  top: 185.4rem;
+  bottom: 10.7rem;
 }
 
 
