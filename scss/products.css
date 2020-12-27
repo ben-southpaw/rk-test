@@ -1,0 +1,49 @@
+.product-1 {
+  position: absolute;
+  width: 31rem;
+  height: 41.4rem;
+  left: 85.3rem;
+  top: 50rem;
+  background-image: url(/images/product-1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.product-2 {
+  position: absolute;
+  width: 31rem;
+  height: 41.4rem;
+  left: 25.3rem;
+  top: 75rem;
+  background-image: url(/images/product-2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.product-3 {
+  position: absolute;
+  width: 31rem;
+  height: 41.4rem;
+  left: 85.3rem;
+  top: 100rem;
+  background-image: url(/images/product-3.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.product-4 {
+  position: absolute;
+  width: 31rem;
+  height: 41.4rem;
+  left: 25.3rem;
+  top: 125rem;
+  background-image: url(/images/product-4.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+/*# sourceMappingURL=products.css.map */
