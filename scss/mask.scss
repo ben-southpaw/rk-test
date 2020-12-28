@@ -1,32 +1,3 @@
-:root {
-  --width: 100rem;
-  --x-speed: 30s;
-  --y-speed: 30s;
-  --transition-speed: 10s;
-}
-
-.el {
-  width: var(--width);
-  height: var(--width);
-}
-
-.x {
-  animation: x var(--x-speed) linear infinite alternate;
-}
-.y {
-  animation: y var(--y-speed) linear infinite alternate;
-}
-
-@keyframes x {
-  100% {
-    transform: translateX(calc(100vw - var(--width)));
-  }
-}
-@keyframes y {
-  100% {
-    transform: translateY(calc(100vh - var(--width)));
-  }
-}
 
 .mask-container {
   width: 100%;
@@ -49,25 +20,40 @@
 
 .stars-1 {
   position: absolute;
-  height: 80rem;
-  width: 144rem;
-  top: 0;
-  left: 0;
-  opacity: 0.6;
+  top: 50%;
+  left: 60%;
+  opacity: 1;
+  animation: rotating infinite linear 15s;
+  mix-blend-mode: screen;
+  .stars-1-image {
+    width: 100rem;
+    transform: translate(-50%, -50%) rotate(#{random(360)}deg);
+    animation: fade 5s #{random(5)}s alternate infinite $ease-in-out-sine;
+  }
 }
 
 .stars-2 {
   position: absolute;
-  height: 80rem;
-  width: 144rem;
-  top: 80rem;
-  right: 0;
+  top: 50%;
+  left: 30%;
+  opacity: 1;
+  animation: rotatingReverse infinite linear 15s;
+  mix-blend-mode: screen;
+  .stars-2-image {
+   width: 100rem;
+   transform: translate(-50%, -50%) rotate(#{random(360)}deg);
+   animation: fade 5s #{random(5)}s alternate infinite $ease-in-out-sine;
+  }
 }
-.stars-3 {
-  position: absolute;
-  height: 80rem;
-  width: 144rem;
-  bottom: 0;
-  left: 0;
-
+@keyframes rotating {
+    from { transform: rotate(0deg) translateX(5rem) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(5rem) rotate(-360deg); }
+}
+@keyframes rotatingReverse {
+    from { transform: rotate(0deg) translateX(5rem) rotate(0deg); }
+    to   { transform: rotate(-360deg) translateX(5rem) rotate(360deg); }
+}
+@keyframes fade {
+    from { opacity: 0.2;}
+    to   { opacity: 1;}
 }

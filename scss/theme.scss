@@ -22,25 +22,15 @@ $breakpoints: (
 
 //css vars
 $mask-size: 80rem;
-//main article
-$article-width-desktop: 767px;
-$article-width-mobile: 375px;
 $article-max: 1400px;
 $screen-width: 100vw;
 
-//------------------cookiewall-------------------------
-$small: "(max-width: 736px)";
 
 //-----------------------COLOURS------------------------------
 
 /* Primary colors */
 $primary-bg: #050F41;
-$mid-blue: #4064d6;
-$purple: #6685e8;
-$violet: #9eb0f6;
 $font-white: white;
-$font-grey: #d8d8d8;
-$gold: #d6bd89;
 
 //--------------------------TEXT------------------------------
 // *-- use mixins
@@ -52,7 +42,6 @@ $medium: "Futura Medium", Arial, Helvetica, sans-serif;
 $nav-index: 1000;
 $menu-index: 1001;
 
-//@import 'mixins';
 // Easings
 // -------
 // Linear

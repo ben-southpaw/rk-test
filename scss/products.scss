@@ -12,11 +12,46 @@
   background-position: center;
   background-size: contain;
 }
-.shopbtn-1 {
+ .shopbtn {
   position: absolute;
   width: 11rem;
+  height: 5rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  }
+.shopbtn-1 {
+  position: absolute;
   left: 95.3rem;
   top: 95rem;
+}
+.shopbtn-img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition: transform 1s $ease-out-quart;
+  .shopbtn:hover & {
+    &:nth-child(1){
+      transform: scaleX(1.1) scaleY(1.2);
+    }
+    &:nth-child(2){
+      transform: scaleX(0.95) scaleY(0.9);
+    }
+  }
+}
+span {
+  color: white;
+  text-transform: uppercase;
+  font-size: 1rem;
+  opacity: 0.8;
+  letter-spacing: 0.1rem;
+  display: inline-block;
+  transition: transform 1s $ease-out-quart;
+  .shopbtn:hover & {
+      transform: scale(1.1);
+  }
 }
 .product-1-desc {
   font-family: $medium;

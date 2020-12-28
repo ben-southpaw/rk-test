@@ -1,6 +1,5 @@
 <!doctype html>
 <html class="no-js" lang="">
-
 <head>
   <meta charset="utf-8">
   <title>Robot Kittens Test</title>
@@ -12,20 +11,17 @@
   <meta property="og:image" content="">
   <link rel="manifest" href="../site.webmanifest">
   <link rel="apple-touch-icon" href="../icon.png">
-  <!-- Place favicon.ico in the root directory -->
-<!--  <link rel="stylesheet" href="scss/normalize.scss">-->
-   <link rel="stylesheet" href="../scss/main.scss">
-
-  <meta name="theme-color" content="#fafafa">
+  <link rel="stylesheet" href="../scss/main.scss">
 </head>
 
 <body>
     <div class="mask-container">
     <div class="mask-stars"></div>
-      <div class="el x">
-        <img src="images/stars-masked.png" alt="1" class="stars-1 y">
-        <img src="images/stars-masked-1.png" alt="2" class="stars-2 y">
-        <img src="images/stars-masked-2.png" alt="3" class="stars-3 y">
+      <div class="stars-1">
+        <img src="images/stars-masked-1.png" alt="2" class="stars-1-image">
+        </div>
+       <div class="stars-2">
+        <img src="images/stars-masked-2.png" alt="3" class="stars-2-image">
       </div>
   </div>
 
@@ -38,13 +34,11 @@
   <img src="/images/i_rise.png" alt="rise" class="i-rise-image">
   <img src="/images/red-lines.png" alt="lines" class="red-lines">
 
-
   <div class="bg-container">
     <img src="/images/UNITY.png" alt="unity" class="bg-unity">
     <img src="/images/bg-element-loyalt.png" alt="loyalt" class="bg-loyalt">
     <img src="/images/bg-element-lyrics.png" alt="lyrics" class="bg-lyrics">
   </div>
-
 
   <div class="circle-container">
     <div class="circle-inner-1"></div>
@@ -63,24 +57,36 @@
 
   <div class="product-container">
     <div class="product-1"></div>
-    <img src="/images/shop-btn.png" alt="button" class="shopbtn-1">
+    <button class="shopbtn shopbtn-1">
+      <img src="/images/empty-btn.png" alt="button" class="shopbtn-img">
+      <img src="/images/empty-btn.png" alt="button" class="shopbtn-img">
+       <span>shop now</span>
+    </button>
+    <button class="shopbtn shopbtn-2">
+      <img src="/images/empty-btn.png" alt="button" class="shopbtn-img">
+      <img src="/images/empty-btn.png" alt="button" class="shopbtn-img">
+       <span>shop now</span>
+    </button>
+    <button class="shopbtn shopbtn-3">
+      <img src="/images/empty-btn.png" alt="button" class="shopbtn-img">
+      <img src="/images/empty-btn.png" alt="button" class="shopbtn-img">
+       <span>shop now</span>
+    </button>
+    <button class="shopbtn shopbtn-4">
+      <img src="/images/empty-btn.png" alt="button" class="shopbtn-img">
+      <img src="/images/empty-btn.png" alt="button" class="shopbtn-img">
+       <span>shop now</span>
+    </button>
     <p class="product-1-desc">Lewis Hamilton x H.E.R. Oversized T-Shirt</p>
     <div class="product-2"></div>
-    <img src="/images/shop-btn.png" alt="button" class="shopbtn-2">
     <p class="product-2-desc">Lewis Hamilton x H.E.R. Harness Bag</p>
     <div class="product-3"></div>
-    <img src="/images/shop-btn.png" alt="button" class="shopbtn-3">
     <p class="product-3-desc">Lewis Hamilton x H.E.R. Mesh Dress</p>
     <div class="product-4"></div>
-    <img src="/images/shop-btn.png" alt="button" class="shopbtn-4">
     <p class="product-4-desc">Lewis Hamilton x H.E.R. Unity Bumbag</p>
   </div>
 
-
-
   <img class="divider" src="/images/divider.png" alt="divider">
-<!--<script src="js/vendor/modernizr-3.11.2.min.js"></script>-->
   <script type="module" src="../src/app.js"></script>
 </body>
-
 </html>
