@@ -1,0 +1,73 @@
+:root {
+  --width: 100rem;
+  --x-speed: 30s;
+  --y-speed: 30s;
+  --transition-speed: 10s;
+}
+
+.el {
+  width: var(--width);
+  height: var(--width);
+}
+
+.x {
+  animation: x var(--x-speed) linear infinite alternate;
+}
+.y {
+  animation: y var(--y-speed) linear infinite alternate;
+}
+
+@keyframes x {
+  100% {
+    transform: translateX(calc(100vw - var(--width)));
+  }
+}
+@keyframes y {
+  100% {
+    transform: translateY(calc(100vh - var(--width)));
+  }
+}
+
+.mask-container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  mask-image: url(/images/circle-mask-1.png);
+  -webkit-mask-image: url(/images/circle-mask-1.png);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: $mask-size;
+  -webkit-mask-position: calc(var(--mouse-x) - #{$mask-size / 2}) calc(var(--mouse-y) - #{$mask-size / 2});
+}
+
+.mask-stars {
+  background: url(/images/stars-tile-2.jpg);
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  position: absolute;
+}
+
+.stars-1 {
+  position: absolute;
+  height: 80rem;
+  width: 144rem;
+  top: 0;
+  left: 0;
+  opacity: 0.6;
+}
+
+.stars-2 {
+  position: absolute;
+  height: 80rem;
+  width: 144rem;
+  top: 80rem;
+  right: 0;
+}
+.stars-3 {
+  position: absolute;
+  height: 80rem;
+  width: 144rem;
+  bottom: 0;
+  left: 0;
+
+}

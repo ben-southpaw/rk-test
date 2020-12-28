@@ -1,0 +1,55 @@
+.bg-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  .bg-unity {
+    position: absolute;
+    width: 26.9rem;
+    height: 47.8rem;
+    left: 57.9rem;
+    top: 90rem;
+    opacity: 0;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+  }
+  .bg-unity:hover {
+    opacity: 1;
+  }
+
+  .bg-loyalt {
+    position: absolute;
+    width: 47.5rem;
+    height: 19.2rem;
+    left: 50.3rem;
+    top: 8.2rem;
+    opacity: 0;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+  }
+  .bg-loyalt:hover {
+    opacity: 0.5;
+  }
+  .bg-lyrics {
+    position: absolute;
+    width: 63.6rem;
+    height: 48.5rem;
+    left: 66.3rem;
+    top: 150rem;
+    opacity: 0;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+  }
+  .bg-lyrics:hover {
+    opacity: 0.5;
+  }
+}
